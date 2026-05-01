@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import ronaldo from "../../assets/images/ronaldo.webp"
+
+export const metadata = {
+  title: "About Page",
+  description: "About Footballers",
+};
 const AboutPage = () => {
   return (
     <div>
