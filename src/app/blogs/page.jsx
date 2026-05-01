@@ -1,6 +1,10 @@
+import { Geist } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 
+const geist = Geist({
+  subsets: ['latin'],
+})
 const BlogsPage = () => {
   const blogs = [
     {
@@ -87,7 +91,7 @@ const BlogsPage = () => {
   ];
 
   return (
-    <div>
+    <div className={geist.className}>
       <h2 className="text-3xl text-cyan-300">All Blogs Here</h2>
       <div>
         {blogs.map((blog) => (
